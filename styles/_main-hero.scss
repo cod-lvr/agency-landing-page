@@ -1,0 +1,27 @@
+main {
+  #hero {
+    padding: 0;
+    // margin-top: -25px;
+    height: 50vh;
+    background-image: url(/styles/images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .text-box {
+      position: absolute;
+      top: 6%;
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.4rem;
+        text-transform: uppercase;
+        color: $White;
+        font-family: $f-frounces;
+      }
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

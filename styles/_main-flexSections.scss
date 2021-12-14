@@ -1,0 +1,50 @@
+main {
+  #flex-sections {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .img-box {
+        width: 100%;
+        height: 60%;
+        img {
+          width: 100%;
+        }
+      }
+      .content-box {
+        padding: 2.1rem 2rem;
+        h4 {
+          font-size: 1.8rem;
+          font-family: $f-frounces;
+          font-weight: 900;
+        }
+        p {
+          color: $Dark-grayish-blue;
+          line-height: 1.5rem;
+          font-size: 1rem;
+        }
+        .btn-yellow {
+          &:hover {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 1) 81%,
+              hsl(51, 100%, 49%) 10%
+            );
+          }
+        }
+        .btn-red {
+          &:hover {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 1) 81%,
+              hsl(7, 99%, 70%) 10%
+            );
+          }
+        }
+      }
+    }
+  }
+}
