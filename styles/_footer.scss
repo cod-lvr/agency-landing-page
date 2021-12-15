@@ -1,0 +1,33 @@
+footer {
+  background-color: $Dark-moderate-cyan;
+  height: 35vh;
+  .footer-nav {
+    padding: 2rem 1rem;
+    .f-logo {
+      padding: 1rem;
+      img {
+        width: 50%;
+      }
+    }
+    .f-links {
+      margin: 1.5rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $Dark-desaturated-cyan;
+        font-weight: 700;
+      }
+    }
+  }
+  .social-icons {
+    margin: 1rem auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

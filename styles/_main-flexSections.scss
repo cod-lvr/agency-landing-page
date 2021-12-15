@@ -46,5 +46,42 @@ main {
         }
       }
     }
+    .bg-content {
+      position: relative;
+      height: 80vh;
+      width: 100%;
+      background-position: center;
+      background-size: contain;
+      background-clip: border-box;
+      background-size: cover;
+      background-position-y: top;
+      .content-down {
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+        left: 0;
+        h5 {
+          font-size: 1.7rem;
+          font-family: $f-frounces;
+          font-weight: 900;
+        }
+        p {
+          padding: 0 0.8rem;
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .photg {
+      background-image: url(images/mobile/image-photography.jpg);
+      .content-down {
+        color: $Dark-blue;
+      }
+    }
+    .grph {
+      background-image: url(images/mobile/image-graphic-design.jpg);
+      .content-down {
+        color: $Dark-desaturated-cyan;
+      }
+    }
   }
 }

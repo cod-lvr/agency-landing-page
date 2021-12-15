@@ -1,0 +1,42 @@
+main {
+  #testimon-cards {
+    padding: 1.5rem;
+    .test-title {
+      width: 100%;
+      h4 {
+        font-family: $f-frounces;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: $Grayish-blue;
+      }
+    }
+    .test-card {
+      margin: 2rem 0;
+      .p-img {
+        width: 100%;
+        padding: 1rem 0;
+        img {
+          width: 20%;
+          border-radius: 50%;
+        }
+      }
+      .p-content {
+        p {
+          color: $Very-dark-grayish-blue;
+          line-height: 1.6rem;
+        }
+      }
+      .p-title {
+        h6 {
+          font-size: 1.1rem;
+          font-family: $f-frounces;
+        }
+        p {
+          margin-top: -35px;
+          color: $Grayish-blue;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

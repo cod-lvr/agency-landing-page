@@ -37,6 +37,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #3ebfff;
+  margin-bottom: -5px;
 }
 
 main #hero {
@@ -112,5 +113,185 @@ main #flex-sections .container .content-box .btn-yellow:hover {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, white), color-stop(10%, #fad400));
   background: linear-gradient(180deg, white 81%, #fad400 10%);
+}
+
+main #flex-sections .container .content-box .btn-red:hover {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, white), color-stop(10%, #fe7867));
+  background: linear-gradient(180deg, white 81%, #fe7867 10%);
+}
+
+main #flex-sections .bg-content {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-clip: border-box;
+  background-size: cover;
+  background-position-y: top;
+}
+
+main #flex-sections .bg-content .content-down {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  left: 0;
+}
+
+main #flex-sections .bg-content .content-down h5 {
+  font-size: 1.7rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+main #flex-sections .bg-content .content-down p {
+  padding: 0 0.8rem;
+  font-size: 1.1rem;
+}
+
+main #flex-sections .photg {
+  background-image: url(images/mobile/image-photography.jpg);
+}
+
+main #flex-sections .photg .content-down {
+  color: #19536b;
+}
+
+main #flex-sections .grph {
+  background-image: url(images/mobile/image-graphic-design.jpg);
+}
+
+main #flex-sections .grph .content-down {
+  color: #25564b;
+}
+
+main #testimon-cards {
+  padding: 1.5rem;
+}
+
+main #testimon-cards .test-title {
+  width: 100%;
+}
+
+main #testimon-cards .test-title h4 {
+  font-family: "Fraunces", serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #a7abae;
+}
+
+main #testimon-cards .test-card {
+  margin: 2rem 0;
+}
+
+main #testimon-cards .test-card .p-img {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+main #testimon-cards .test-card .p-img img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+main #testimon-cards .test-card .p-content p {
+  color: #5a636c;
+  line-height: 1.6rem;
+}
+
+main #testimon-cards .test-card .p-title h6 {
+  font-size: 1.1rem;
+  font-family: "Fraunces", serif;
+}
+
+main #testimon-cards .test-card .p-title p {
+  margin-top: -35px;
+  color: #a7abae;
+  font-size: 0.9rem;
+}
+
+main #flex-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  gap: 0;
+}
+
+main #flex-images .pic {
+  width: calc(100% / 2);
+  height: 100%;
+  margin: -5px 0;
+}
+
+main #flex-images .pic img {
+  width: 100%;
+}
+
+footer {
+  background-color: #458c7e;
+  height: 35vh;
+}
+
+footer .footer-nav {
+  padding: 2rem 1rem;
+}
+
+footer .footer-nav .f-logo {
+  padding: 1rem;
+}
+
+footer .footer-nav .f-logo img {
+  width: 50%;
+}
+
+footer .footer-nav .f-links {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-nav .f-links a {
+  text-decoration: none;
+  color: #25564b;
+  font-weight: 700;
+}
+
+footer .social-icons {
+  margin: 1rem auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
