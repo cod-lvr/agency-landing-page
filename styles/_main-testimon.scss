@@ -38,5 +38,22 @@ main {
         }
       }
     }
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 55vh;
+      .test-title {
+        width: 100%;
+      }
+      .test-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .test-card {
+        width: calc(100% / 3 - 30px);
+      }
+    }
   }
 }

@@ -30,4 +30,25 @@ footer {
     justify-content: space-around;
     align-items: center;
   }
+  @media (min-width: 1440px) {
+    height: 25vh;
+    .footer-nav {
+      padding: 2rem 1rem;
+      .f-logo {
+        padding: 1rem;
+        img {
+          width: 15%;
+        }
+      }
+      .f-links {
+        margin: 1.5rem 0;
+        width: 50%;
+        margin: 2rem auto;
+      }
+    }
+    .social-icons {
+      margin: 0 auto;
+      width: 20%;
+    }
+  }
 }

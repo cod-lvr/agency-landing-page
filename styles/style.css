@@ -40,6 +40,45 @@ nav {
   margin-bottom: -5px;
 }
 
+@media (min-width: 1440px) {
+  nav {
+    padding: 2rem;
+  }
+  nav .nav-links {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  nav .nav-links .nav-btn {
+    padding: 1rem 2rem;
+    border: 0;
+    outline: none;
+    background-color: white;
+    color: #000;
+    border-radius: 24px;
+    letter-spacing: 0.2rem;
+  }
+  nav .nav-links .nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.562);
+    color: white;
+  }
+}
+
 main #hero {
   padding: 0;
   height: 50vh;
@@ -66,6 +105,23 @@ main #hero .text-box h2 {
 
 main #hero .text-box img {
   height: 100%;
+}
+
+@media (min-width: 1440px) {
+  main #hero {
+    height: 50vh;
+    width: 100vw;
+    background-image: url(/styles/images/desktop/image-header.jpg);
+    background-size: cover;
+  }
+  main #hero .text-box {
+    width: 97%;
+    text-align: center;
+  }
+  main #hero .text-box h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
 }
 
 main #flex-sections .container {
@@ -166,6 +222,76 @@ main #flex-sections .grph .content-down {
   color: #25564b;
 }
 
+main #flex-sections .container:nth-child(2) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  main #flex-sections .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: -10px;
+  }
+  main #flex-sections .container .img-box {
+    width: 100%;
+    height: 50%;
+  }
+  main #flex-sections .container .img-box img {
+    width: 100%;
+  }
+  main #flex-sections .container .content-box {
+    padding: 1.1rem 3rem;
+    text-align: left;
+    width: 87%;
+  }
+  main #flex-sections .container .content-box h4 {
+    font-size: 2rem;
+    width: 50%;
+  }
+  main #flex-sections .container .content-box p {
+    color: #818498;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  main #flex-sections .container .bg-content {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-clip: content-box;
+  }
+  main #flex-sections .container .bg-content .content-down {
+    width: 95%;
+    text-align: center;
+  }
+  main #flex-sections .container .bg-content .content-down p {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 2rem;
+  }
+  main #flex-sections .container .photg {
+    background-image: url(images/desktop/image-photography.jpg);
+  }
+  main #flex-sections .container .grph {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+  }
+  main #flex-sections .container:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 main #testimon-cards {
   padding: 1.5rem;
 }
@@ -211,6 +337,38 @@ main #testimon-cards .test-card .p-title p {
   font-size: 0.9rem;
 }
 
+@media (min-width: 1440px) {
+  main #testimon-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 55vh;
+  }
+  main #testimon-cards .test-title {
+    width: 100%;
+  }
+  main #testimon-cards .test-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main #testimon-cards .test-card {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
 main #flex-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +395,12 @@ main #flex-images .pic {
 
 main #flex-images .pic img {
   width: 100%;
+}
+
+@media (min-width: 1440px) {
+  main #flex-images .pic {
+    width: calc(100% / 4);
+  }
 }
 
 footer {
@@ -293,5 +457,29 @@ footer .social-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    height: 25vh;
+  }
+  footer .footer-nav {
+    padding: 2rem 1rem;
+  }
+  footer .footer-nav .f-logo {
+    padding: 1rem;
+  }
+  footer .footer-nav .f-logo img {
+    width: 15%;
+  }
+  footer .footer-nav .f-links {
+    margin: 1.5rem 0;
+    width: 50%;
+    margin: 2rem auto;
+  }
+  footer .social-icons {
+    margin: 0 auto;
+    width: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

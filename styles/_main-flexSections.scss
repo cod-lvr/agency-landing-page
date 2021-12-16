@@ -83,5 +83,63 @@ main {
         color: $Dark-desaturated-cyan;
       }
     }
+    .container:nth-child(2) {
+      flex-direction: column;
+    }
+    @media (min-width: 1440px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: -10px;
+        .img-box {
+          width: 100%;
+          height: 50%;
+          img {
+            width: 100%;
+          }
+        }
+        .content-box {
+          padding: 1.1rem 3rem;
+          text-align: left;
+          width: 87%;
+          h4 {
+            font-size: 2rem;
+            width: 50%;
+          }
+          p {
+            color: $Dark-grayish-blue;
+            line-height: 2rem;
+            font-size: 1.2rem;
+            width: 80%;
+          }
+        }
+        .bg-content {
+          position: relative;
+          height: 50vh;
+          width: 100%;
+          background-position: center;
+          background-size: cover;
+          background-clip: content-box;
+          .content-down {
+            width: 95%;
+            text-align: center;
+            p {
+              width: 50%;
+              margin: 0 auto;
+              line-height: 2rem;
+            }
+          }
+        }
+        .photg {
+          background-image: url(images/desktop/image-photography.jpg);
+        }
+        .grph {
+          background-image: url(images/desktop/image-graphic-design.jpg);
+        }
+      }
+      .container:nth-child(2) {
+        flex-direction: row;
+      }
+    }
   }
 }

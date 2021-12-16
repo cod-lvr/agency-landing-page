@@ -14,5 +14,10 @@ main {
         width: 100%;
       }
     }
+    @media (min-width: 1440px) {
+      .pic {
+        width: calc(100% / 4);
+      }
+    }
   }
 }
