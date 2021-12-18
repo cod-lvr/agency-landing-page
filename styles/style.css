@@ -42,6 +42,11 @@ nav {
 }
 
 nav .nav-links {
+  display: none;
+  left: -5000%;
+}
+
+nav .responsive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,20 +60,21 @@ nav .nav-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  left: 5%;
   padding: 3rem;
   position: absolute;
   top: 100%;
-  left: -5000%;
   bottom: 0;
   min-height: 210px;
   min-width: 240px;
   background-color: white;
   z-index: 999;
-  -webkit-transition: 0.3s all ease-in;
-  transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s left ease-in;
+  transition: 0.3s left ease-in;
+  background-color: gainsboro;
 }
 
-nav .nav-links a {
+nav .responsive a {
   text-decoration: none;
   color: #a7abae;
   font-weight: bold;
@@ -76,7 +82,7 @@ nav .nav-links a {
   font-size: 1rem;
 }
 
-nav .nav-links .nav-btn {
+nav .responsive .nav-btn {
   padding: 1rem 2rem;
   border: 0;
   outline: none;
@@ -89,24 +95,19 @@ nav .nav-links .nav-btn {
   font-size: 1rem;
 }
 
-nav .nav-links .nav-btn:hover {
+nav .responsive .nav-btn:hover {
   background-color: rgba(255, 255, 255, 0.562);
   color: white;
 }
 
-nav .responsive {
-  left: 5%;
-}
-
 @media (min-width: 1440px) {
   nav {
-    padding: 2rem;
+    padding: 1.5rem;
   }
   nav .humburger {
     display: none;
   }
   nav .nav-links {
-    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,16 +115,19 @@ nav .responsive {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
   }
   nav .nav-links a {
     text-decoration: none;
+    color: firebrick;
     color: white;
+    font-size: 1.2rem;
   }
   nav .nav-links .nav-btn {
     padding: 1rem 2rem;
@@ -137,6 +141,9 @@ nav .responsive {
   nav .nav-links .nav-btn:hover {
     background-color: rgba(255, 255, 255, 0.562);
     color: white;
+  }
+  nav .responsive {
+    left: 0;
   }
 }
 
