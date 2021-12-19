@@ -8,6 +8,7 @@ body {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .btn {
@@ -125,7 +126,6 @@ nav .responsive .nav-btn:hover {
   }
   nav .nav-links a {
     text-decoration: none;
-    color: firebrick;
     color: white;
     font-size: 1.2rem;
   }
@@ -233,16 +233,46 @@ main #flex-sections .container .content-box p {
   font-size: 1rem;
 }
 
-main #flex-sections .container .content-box .btn-yellow:hover {
+main #flex-sections .container .content-box .btn-yellow {
+  position: relative;
+}
+
+main #flex-sections .container .content-box .btn-yellow::after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  top: 70%;
+  padding: 0.4rem 2.4rem;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, white), color-stop(10%, #fad400));
   background: linear-gradient(180deg, white 81%, #fad400 10%);
 }
 
-main #flex-sections .container .content-box .btn-red:hover {
+main #flex-sections .container .content-box .btn-yellow:hover {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, white), color-stop(10%, #a28a02));
+  background: linear-gradient(180deg, white 81%, #a28a02 10%);
+}
+
+main #flex-sections .container .content-box .btn-red {
+  position: relative;
+}
+
+main #flex-sections .container .content-box .btn-red::after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  top: 70%;
+  padding: 0.4rem 2.4rem;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, white), color-stop(10%, #fe7867));
   background: linear-gradient(180deg, white 81%, #fe7867 10%);
+}
+
+main #flex-sections .container .content-box .btn-red:hover {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, white), color-stop(10%, #f01c00));
+  background: linear-gradient(180deg, white 81%, #f01c00 10%);
 }
 
 main #flex-sections .bg-content {
